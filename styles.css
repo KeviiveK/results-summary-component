@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+
+    justify-content: center;
+    flex-wrap: wrap;
+
+    font-family: 'Hanken Grotesk';
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.details {
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    color: #FFF;
+
+}
+
+.details__title {
+    margin-top: 40px;
+
+    font-size: 1.2em;
+    font-weight: 500;
+
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+.details>p:first-of-type {
+    margin-top: 20px;
+
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.details>p:last-of-type {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 75%;
+
+    text-align: center;
+
+    color: hsl(241, 100%, 89%);
+}
+
+.score {
+    display: flex;
+
+    margin-top: 40px;
+    border-radius: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+
+.score>p:first-of-type {
+    font-size: 3.5em;
+    font-weight: 800;
+}
+
+.score>p:last-of-type {
+    color: hsla(0, 0%, 100%, 0.4)
+}
+
+.summary {
+    display: flex;
+
+    border-radius: 0 25px 25px 0;
+    flex-direction: column;
+    align-items: center;
+
+    color: hsla(224, 30%, 27%, 0.5);
+
+    box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.summary__title {
+    margin-top: 40px;
+    margin-left: 40px;
+    align-self: flex-start;
+
+    font-size: 1.2em;
+
+    color: hsl(224, 30%, 27%);
+}
+
+.summary-list {
+    margin-top: 30px;
+    width: 75%;
+
+    list-style: none;
+}
+
+.summary-list__item {
+    display: flex;
+
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.summary-list__item:first-of-type {
+    margin-top: 0;
+}
+
+.summary-list__item--red {
+    background-color: hsla(0, 100%, 67%, 0.05);
+}
+
+.summary-list__item--orange {
+    background-color: hsla(39, 100%, 56%, 0.05);
+}
+
+.summary-list__item--green {
+    background-color: hsla(166, 100%, 37%, 0.05);
+}
+
+.summary-list__item--blue {
+    background-color: hsla(234, 85%, 45%, 0.05);
+}
+
+.summary-list__reaction {
+    color: hsl(0, 100%, 67%);
+}
+
+.summary-list__memory {
+    color: hsl(39, 100%, 56%);
+}
+
+.summary-list__verbal {
+    color: hsl(166, 100%, 37%);
+}
+
+.summary-list__visual {
+    color: hsl(234, 85%, 45%);
+}
+
+.summary-list__reaction::before {
+    content: url(./assets/images/icon-reaction.svg);
+
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.summary-list__memory::before {
+    content: url(./assets/images/icon-memory.svg);
+
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.summary-list__verbal::before {
+    content: url(./assets/images/icon-verbal.svg);
+
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.summary-list__visual::before {
+    content: url(./assets/images/icon-visual.svg);
+
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.summary-list__score {
+    display: flex;
+    margin-left: auto;
+}
+
+.summary-list__score>p:first-of-type {
+    font-weight: 700;
+
+    color: hsl(224, 30%, 27%);
+}
+
+.summary-list__score>span {
+    margin: 0 5px;
+}
+
+
+.button {
+    margin: 40px 0;
+    padding: 1em;
+    border: none;
+    border-radius: 25px;
+    width: 75%;
+    max-width: 350px;
+
+    font-size: 1em;
+
+    background-color: hsl(224, 30%, 27%);
+    color: #FFF;
+
+    cursor: pointer;
+}
+
+.button:active {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.attribution {
+    margin-top: 20px;
+
+    font-size: 0.7em;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 400px) {
+    .details {
+        border-radius: 0 0 25px 25px;
+        width: 100%;
+    }
+
+    .summary {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 960px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .details {
+        border-radius: 0 0 25px 25px;
+        width: 100%;
+    }
+
+    .summary {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 961px) {
+    .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        width: 960px;
+
+        transform: translate(-50%, -50%);
+    }
+
+    .details {
+        width: 350px;
+    }
+
+    .summary {
+        width: 350px;
+    }
+}
