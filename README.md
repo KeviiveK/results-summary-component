@@ -7,10 +7,9 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
+  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -26,10 +25,14 @@ Users should be able to:
 
 ![](./screenshot.jpeg)
 
+### Links
+
+- Live Site URL: [Results-summary-component](https://keviivek.github.io/Results-summary-component/)
+
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
+- HTML5
+- CSS
 - Flexbox
