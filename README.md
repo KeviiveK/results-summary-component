@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Results-summary-component](https://keviivek.github.io/Results-summary-component/)
+- Live Site URL: [results-summary-component](https://keviivek.github.io/results-summary-component/)
 
 ## My process
 
